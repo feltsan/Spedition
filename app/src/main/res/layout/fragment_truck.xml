@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/truckLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/border"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/volvopng"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:id="@+id/truck" />
+
+            <LinearLayout
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:textSize="26dp"
+                android:textStyle="bold">
+
+                <TextView
+                    android:id="@+id/nomerZnakTruck"
+                    android:layout_width="160dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/nomcl"
+                    android:gravity="center_horizontal|clip_horizontal|fill_vertical"
+                    android:hint="Номер"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textIsSelectable="false"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/truckTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/black">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_green_dark"
+                            android:gravity="center"
+                            android:text="Карта"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="Сертиф."
+                            android:textColor="@android:color/black" />
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/euro" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/tacho" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/strach"></TextView>
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cale" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/greenCardDateTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/certDateTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/europackDateTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tachoDateTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/policyDateTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/dol" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/grenCardPriceTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/certPriceTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/europackPriceTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tachoPriceTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/strachPriceTruck"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trailerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/truckLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/border"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/trailerpng"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:textSize="26dp"
+                android:textStyle="bold">
+
+                <TextView
+                    android:id="@+id/nomerZnakTrailer"
+                    android:layout_width="160dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/nomcl"
+                    android:gravity="center_horizontal|clip_horizontal|fill_vertical"
+                    android:hint="Номер"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textIsSelectable="false"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/black">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_green_dark"
+                            android:gravity="center"
+                            android:text="Карта"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="Сертиф."
+                            android:textColor="@android:color/black" />
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/euro" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="#fff100"
+                            android:gravity="center"
+                            android:text="Свід."
+                            android:textColor="@android:color/black">
+
+                        </TextView>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/strach"></TextView>
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cale" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/greenCardDateTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/certDateTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/europackDateTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/svidYellowDateTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/strachDateTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="0.5px"
+                            android:layout_marginRight="0.5px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/dol" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/greenCardPriceTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/certPriceTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/europackPriceTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/svidYellowPriceTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/strachCardPriceTrailer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="5"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

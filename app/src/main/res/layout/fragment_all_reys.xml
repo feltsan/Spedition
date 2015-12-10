@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp">
+
+    <TableLayout
+        android:id="@+id/reysTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+
+                android:layout_marginLeft="0.5px"
+                android:layout_marginRight="0.5px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="0.5px"
+                android:layout_marginRight="0.5px"
+                android:layout_marginTop="1px"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/calenda" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Сертиф."
+                android:textColor="@android:color/black" >
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/start" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/finish_flag" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/client" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="3"
+
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/dol"></TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="5"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="2"
+
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/confirm"></TextView>
+            </RelativeLayout>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/reysList"
+        android:layout_below="@id/reysTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fab">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_add_white_48dp"
+        app:elevation="8dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

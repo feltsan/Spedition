@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TableLayout
+        android:id="@+id/truckTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/nomer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="0.5px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/reysDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+                android:text="12.10.15"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="0.5px"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+
+
+            <TextView
+                android:id="@+id/startpoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+                android:text="Васарошнамень"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/finishPoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+                android:text="Москва"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/client"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+                android:text="Бейла"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/priceSpedition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="14dp"
+                android:text="2700"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:singleLine="false"
+                android:inputType="number" />
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="5"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+              >
+
+                <CheckBox
+                    android:id="@+id/confirmReys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

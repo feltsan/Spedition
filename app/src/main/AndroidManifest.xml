@@ -1,10 +1,77 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.feltsan.spedition">
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher" android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity
+            android:name=".ui.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.AllTruckActivity"
+            android:theme="@style/Theme.AppCompat"
+            >
+
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.activity.InviteActivity"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".ui.activity.AddActivity"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity android:name=".ui.activity.DetailActivity"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <activity android:name=".ui.activity.AllDocumentsActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:parentActivityName=".ui.activity.AllTruckActivity"/>
+
+        <receiver
+            android:name=".until.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".until.ConnectivityChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SERVICE_STATE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".until.RememberService"
+            android:exported="false"/>
+        <service
+            android:name=".until.GetInvites"
+            android:exported="false">
+        </service>
+        <receiver android:process=":remote" android:name=".until.Alarm">>
+
+        </receiver>
     </application>
-
 </manifest>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/speditionTV"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spedition"/>
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рейси"
+                android:textColor="#0b3796"
+                android:textSize="28dp"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/oilTV"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_below="@id/speditionTV"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+         >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oil"/>
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Масло"
+                android:textColor="#0b3796"
+                android:textSize="28dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/serviceTV"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_below="@id/oilTV"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/service"/>
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сервіс"
+                android:textColor="#0b3796"
+                android:textSize="28dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/serviceTV"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:id="@+id/documetsTV"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/documents"/>
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Папка"
+                android:textColor="#0b3796"
+                android:textSize="28dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

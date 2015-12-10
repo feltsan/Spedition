@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <TableLayout
+        android:id="@+id/allOilTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1px"
+            android:layout_marginRight="1px"
+            android:layout_marginTop="1px"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Закінчується термін дії"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Номер"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp" />
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="0.5px"
+                android:layout_marginRight="0.5px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Тип"
+                android:textColor="@android:color/black"
+                android:textSize="24dp">
+
+                    />
+            </TextView>
+
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Дата"
+                android:textColor="@android:color/black"
+                android:textSize="24dp">
+
+
+            </TextView>
+
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/documentsList"
+        android:layout_below="@id/allOilTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/close">
+
+    </ListView>
+
+    <Button
+
+        android:id="@+id/close"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:text="Закрити"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
