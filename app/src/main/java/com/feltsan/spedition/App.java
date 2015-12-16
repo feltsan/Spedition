@@ -40,7 +40,7 @@ public class App extends Application{
     public static final int POLTru =9;
     public static final int POLTra =10;
 
-    public static final long REMEMBER_DIFF = 864000000l;
+    public static final long REMEMBER_DIFF = 1209600000l;
     public static final long OIL_DIFF = 7776000000l;
 
 
@@ -50,6 +50,7 @@ public class App extends Application{
     public static final String RUN_ID = "RUN_ID";
     public static final String SER_ID = "SER_ID";
     public static final String TEMP_ID = "TEMP_ID";
+    public static final String DOWNLOAD_ID = "TEMP_ID";
 
 
     @Override

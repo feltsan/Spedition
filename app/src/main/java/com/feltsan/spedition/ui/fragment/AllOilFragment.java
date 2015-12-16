@@ -112,7 +112,7 @@ public class AllOilFragment extends Fragment implements View.OnClickListener,Ada
                 ParseQuery<Oil> query = Oil.getQuery();
                 query.include("truck");
                 query.whereEqualTo("truck", detailActivity.getTruck());
-                query.orderByAscending("createdAt");
+                query.orderByAscending("date");
                 query.fromLocalDatastore();
                 return query;
             }

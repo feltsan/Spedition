@@ -110,7 +110,7 @@ public class AllServiceFragment extends Fragment implements View.OnClickListener
                 ParseQuery<Servis> query = Servis.getQuery();
                 query.include("truck");
                 query.whereEqualTo("truck", detailActivity.getTruck());
-                query.orderByAscending("createdAt");
+                query.orderByAscending("time_stamp");
                 query.fromLocalDatastore();
                 return query;
             }

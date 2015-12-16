@@ -42,4 +42,15 @@ public class ShPrManager {
         SharedPreferences preferences = context.getSharedPreferences(Sender.class.getSimpleName(), Context.MODE_PRIVATE);
         return  preferences.getBoolean(App.TEMP_ID, true);
     }
+
+    public static void setDownloaded(Context context,boolean conf){
+        SharedPreferences preferences = context.getSharedPreferences(DateHelper.class.getSimpleName(), Context.MODE_PRIVATE);
+        preferences.edit().putBoolean(App.DOWNLOAD_ID,conf).commit();
+    }
+
+    public static boolean getDownloaded(Context context){
+        SharedPreferences preferences = context.getSharedPreferences(DateHelper.class.getSimpleName(), Context.MODE_PRIVATE);
+        return  preferences.getBoolean(App.DOWNLOAD_ID, false);
+    }
+
 }

@@ -22,8 +22,8 @@ public class Reys extends ParseObject implements Serializable {
         super();
     }
 
-    public void setDate(String date){
-        put("date", date);
+    public void setDate(long date){
+        put("time_stamp", date);
     }
 
     public void setStart(String start){
@@ -67,8 +67,8 @@ public class Reys extends ParseObject implements Serializable {
         return ParseQuery.getQuery(Reys.class);
     }
 
-    public String getDate(){
-        return getString("date");
+    public long getDate(){
+        return getLong("time_stamp");
     }
 
     public String getStart(){

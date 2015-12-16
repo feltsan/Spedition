@@ -22,8 +22,8 @@ public class Servis extends ParseObject implements Serializable {
         super();
     }
 
-    public void setDate(String date){
-        put("date", date);
+    public void setDate(long date){
+        put("time_stamp", date);
     }
 
     public void setDistance(String distance){
@@ -67,8 +67,8 @@ public class Servis extends ParseObject implements Serializable {
         return ParseQuery.getQuery(Servis.class);
     }
 
-    public String getDate(){
-        return getString("date");
+    public long getDate(){
+        return getLong("time_stamp");
     }
 
     public String getDistance(){

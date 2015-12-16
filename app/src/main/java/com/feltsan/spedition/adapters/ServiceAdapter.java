@@ -13,6 +13,7 @@ import com.feltsan.spedition.R;
 import com.feltsan.spedition.model.Servis;
 import com.feltsan.spedition.ui.activity.AddActivity;
 import com.feltsan.spedition.ui.activity.DetailActivity;
+import com.feltsan.spedition.until.DateHelper;
 import com.parse.ParseQueryAdapter;
 
 
@@ -61,7 +62,7 @@ public class ServiceAdapter extends ParseQueryAdapter<Servis> {
         TextView shop = holder.shop;
         RelativeLayout layout = holder.layout;
 
-        date.setText(service.getDate());
+        date.setText(DateHelper.convertLongToString(service.getDate()));
         distance.setText(service.getDistance());
         brend.setText(service.getBrend());
         zapchast.setText(service.getZapchast());

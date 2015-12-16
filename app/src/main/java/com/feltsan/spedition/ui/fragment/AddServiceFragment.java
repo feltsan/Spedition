@@ -15,6 +15,7 @@ import com.feltsan.spedition.App;
 import com.feltsan.spedition.R;
 import com.feltsan.spedition.model.Servis;
 import com.feltsan.spedition.ui.activity.AddActivity;
+import com.feltsan.spedition.until.DateHelper;
 import com.parse.ParseException;
 import com.parse.SaveCallback;
 
@@ -110,7 +111,7 @@ public class AddServiceFragment extends Fragment implements View.OnClickListener
     }
 
     public void save(){
-        servis.setDate(date.getText().toString());
+        servis.setDate(DateHelper.convertStringToLong(date.getText().toString()));
         servis.setDistance(distance.getText().toString());
         servis.setBrend(brend.getText().toString());
         servis.setZapchast(zapchast.getText().toString());
@@ -127,7 +128,7 @@ public class AddServiceFragment extends Fragment implements View.OnClickListener
     }
 
     private void setEditData() {
-        date.setText(servis.getDate());
+        date.setText(DateHelper.convertLongToString(servis.getDate()));
         distance.setText(servis.getDistance());
         brend.setText(servis.getBrend());
         zapchast.setText(servis.getZapchast());

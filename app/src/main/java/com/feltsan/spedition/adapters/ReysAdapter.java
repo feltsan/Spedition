@@ -14,7 +14,10 @@ import com.feltsan.spedition.R;
 import com.feltsan.spedition.model.Reys;
 import com.feltsan.spedition.ui.activity.AddActivity;
 import com.feltsan.spedition.ui.activity.DetailActivity;
+import com.feltsan.spedition.until.DateHelper;
 import com.parse.ParseQueryAdapter;
+
+import java.util.Date;
 
 
 /**
@@ -76,7 +79,7 @@ public class ReysAdapter extends ParseQueryAdapter<Reys> {
         RelativeLayout layout = holder.layout;
         TextView nomer = holder.nomer;
 
-        date.setText(reys.getDate());
+        date.setText(DateHelper.convertLongToString(reys.getDate()));
         start.setText(reys.getStart());
         finish.setText(reys.getFinish());
         client.setText(reys.getClient());

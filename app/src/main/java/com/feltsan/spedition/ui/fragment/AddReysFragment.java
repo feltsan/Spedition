@@ -16,6 +16,7 @@ import com.feltsan.spedition.App;
 import com.feltsan.spedition.R;
 import com.feltsan.spedition.model.Reys;
 import com.feltsan.spedition.ui.activity.AddActivity;
+import com.feltsan.spedition.until.DateHelper;
 import com.parse.ParseException;
 import com.parse.SaveCallback;
 
@@ -110,7 +111,7 @@ public class AddReysFragment extends Fragment implements View.OnClickListener {
     }
 
     private void saveReys(){
-        reys.setDate(date.getText().toString());
+        reys.setDate(DateHelper.convertStringToLong(date.getText().toString()));
         reys.setStart(start.getText().toString());
         reys.setFinish(finish.getText().toString());
         reys.setClient(spedition.getText().toString());
@@ -126,7 +127,7 @@ public class AddReysFragment extends Fragment implements View.OnClickListener {
     }
 
     private void setEditData() {
-        date.setText(reys.getDate());
+        date.setText(DateHelper.convertLongToString(reys.getDate()));
         start.setText(reys.getStart());
         finish.setText(reys.getFinish());
         spedition.setText(reys.getClient());
