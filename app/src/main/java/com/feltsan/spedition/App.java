@@ -41,7 +41,7 @@ public class App extends Application{
     public static final int POLTra =10;
 
     public static final long REMEMBER_DIFF = 1209600000l;
-    public static final long OIL_DIFF = 7776000000l;
+    public static final long OIL_DIFF = 12096000000l;
 
 
     public static final String TRUCK_GROUP_NAME = "ALL_TRUCK";
