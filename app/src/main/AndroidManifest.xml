@@ -47,6 +47,10 @@
             android:theme="@style/Theme.AppCompat"
             android:parentActivityName=".ui.activity.AllTruckActivity"/>
 
+        <activity android:name=".ui.activity.AllOilsActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:parentActivityName=".ui.activity.AllTruckActivity"/>
+
         <receiver
             android:name=".until.BootReceiver"
             android:exported="true">

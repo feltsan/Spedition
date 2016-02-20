@@ -32,7 +32,7 @@
             android:layout_weight="1"
             android:background="@android:color/white"
             android:gravity="center"
-            android:text="Всі документи"
+            android:text="Все масло"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="24dp"
             android:paddingTop="7dp"
@@ -60,6 +60,9 @@
                 android:textSize="24dp"
                 android:paddingTop="7dp"
                 android:paddingBottom="7dp" />
+
+
+
             <TextView
 
                 android:layout_width="0dp"
@@ -73,11 +76,17 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:gravity="center"
-                android:text="Тип"
+                android:text="Дата"
                 android:textColor="@android:color/black"
                 android:textSize="24dp">
 
+                    />
             </TextView>
+
+
+
+
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -89,21 +98,45 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:gravity="center"
-                android:text="Дата"
+                android:text="Пробіг"
                 android:textColor="@android:color/black"
                 android:textSize="24dp"
                 android:layout_marginLeft="1px">
+
+
             </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Марка"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:id="@+id/textView5"
+                android:layout_marginLeft="1px" />
+
+
         </TableRow>
     </TableLayout>
 
     <ListView
-        android:id="@+id/documentsList"
+        android:id="@+id/oilsList"
         android:layout_below="@id/allOilTable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/close">
 
     </ListView>
+
+
+
 
 </RelativeLayout>

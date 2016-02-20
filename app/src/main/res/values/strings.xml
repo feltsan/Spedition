@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Король</string>
-    <string name="action_settings">Всі документи</string>
+    <string name="action_documents">Всі документи</string>
+    <string name="action_oils">Все масло</string>
 </resources>

@@ -1,15 +1,9 @@
 package com.feltsan.spedition.ui.activity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.net.ConnectivityManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -106,6 +100,11 @@ public class AllTruckActivity extends AppCompatActivity implements View.OnClickL
         startActivityForResult(i, App.DETAIL_TRUCK_CODE);
     }
 
+    private void openAllOils() {
+        Intent i = new Intent(this, AllOilsActivity.class);
+        startActivityForResult(i, App.DETAIL_TRUCK_CODE);
+    }
+
     @Override
     public void onClick(View v) {
         openAddView();
@@ -146,8 +145,13 @@ public class AllTruckActivity extends AppCompatActivity implements View.OnClickL
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_documents) {
         openAllDocumentsView();
+            return true;
+        }
+
+        if (id == R.id.action_oils) {
+            openAllOils();
             return true;
         }
 

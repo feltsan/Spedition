@@ -8,14 +8,11 @@
     <TableLayout
         android:id="@+id/truckTable"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@android:color/black"
-
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
-
 
         <TableRow
             android:layout_width="match_parent"
@@ -23,71 +20,48 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/nomer"
+                android:id="@+id/nomerAllOils"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:text="номер"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:layout_marginLeft="0.5px"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
-
-
-
-
-            <RelativeLayout
-                android:id="@+id/background"
+            <TextView
+                android:id="@+id/dateAllOils"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_column="0"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:text="Дата"
+                android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:textColor="@android:color/black"
-                android:singleLine="false"
-                android:layout_marginLeft="1px">
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    android:textSize="13dp"
-                    android:text=""
-                    android:id="@+id/type"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:layout_centerInParent="true"
-                    android:textColor="@android:color/black"/>
-
-
-            </RelativeLayout>
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/date"
+                android:id="@+id/distanceAllOils"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:textSize="20dp"
-                android:text="Дата"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                android:textSize="16dp"
+                android:text="Пробіг"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:gravity="center"
@@ -96,9 +70,23 @@
                 android:textStyle="bold"
                 android:layout_marginLeft="1px" />
 
-
-
-
+            <TextView
+                android:id="@+id/brendAllOils"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:textSize="16dp"
+                android:text="Марка"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:layout_marginLeft="1px" />
         </TableRow>
     </TableLayout>
 

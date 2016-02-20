@@ -227,7 +227,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/certDateTruck"
@@ -243,7 +243,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/europackDateTruck"
@@ -259,7 +259,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/tachoDateTruck"
@@ -275,7 +275,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/policyDateTruck"
@@ -291,7 +291,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
 
                 </TableRow>
@@ -337,7 +337,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/certPriceTruck"
@@ -353,7 +353,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/europackPriceTruck"
@@ -369,7 +369,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/tachoPriceTruck"
@@ -385,7 +385,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/strachPriceTruck"
@@ -401,7 +401,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
 
                 </TableRow>
@@ -622,7 +622,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/certDateTrailer"
@@ -638,7 +638,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/europackDateTrailer"
@@ -655,7 +655,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
                         android:textIsSelectable="false"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/svidYellowDateTrailer"
@@ -671,7 +671,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/strachDateTrailer"
@@ -687,7 +687,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
 
                 </TableRow>
@@ -733,7 +733,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/certPriceTrailer"
@@ -749,7 +749,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/europackPriceTrailer"
@@ -765,7 +765,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/svidYellowPriceTrailer"
@@ -781,7 +781,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/strachCardPriceTrailer"
@@ -797,7 +797,7 @@
                         android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
 
                 </TableRow>
