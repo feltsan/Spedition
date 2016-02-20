@@ -84,6 +84,7 @@ public class AllOilsActivity extends AppCompatActivity {
                 ParseQuery<Oil> query = Oil.getQuery();
                 query.addAscendingOrder("date");
                 query.whereNotEqualTo("date", 0);
+                query.whereNotEqualTo("inform", true);
                 query.fromLocalDatastore();
                 return query;
             }
