@@ -25,7 +25,7 @@
 
             <TextView
 
-                android:layout_width="170dp"
+                android:layout_width="140dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/volvopng"
@@ -57,7 +57,7 @@
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/darker_gray"
                     android:textIsSelectable="false"
-                    android:textSize="24dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TableLayout
@@ -101,6 +101,7 @@
                             android:background="@android:color/holo_green_dark"
                             android:gravity="center"
                             android:text="Карта"
+                            android:textSize="8dp"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
@@ -116,7 +117,8 @@
                             android:layout_weight="1"
                             android:background="@android:color/white"
                             android:gravity="center"
-                            android:text="Сертиф."
+                            android:text="Серт."
+                            android:textSize="9dp"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
@@ -231,7 +233,8 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp"
+                            android:text="12.12.2012" />
 
                         <TextView
                             android:id="@+id/certDateTruck"
@@ -247,7 +250,7 @@
                             android:gravity="center"
 
                             android:textColor="@android:color/black"                            android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/europackDateTruck"
@@ -264,7 +267,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/tachoDateTruck"
@@ -281,7 +284,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/policyDateTruck"
@@ -298,7 +301,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
 
                     </TableRow>
@@ -345,7 +348,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/certPriceTruck"
@@ -362,7 +365,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/europackPriceTruck"
@@ -379,7 +382,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/tachoPriceTruck"
@@ -396,7 +399,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/strachPriceTruck"
@@ -413,7 +416,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
 
                     </TableRow>
@@ -438,8 +441,8 @@
 
             <TextView
 
-                android:layout_width="170dp"
-                android:layout_height="85dp"
+                android:layout_width="140dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/trailerpng"
                 android:textSize="26dp"
@@ -469,7 +472,7 @@
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/darker_gray"
                     android:textIsSelectable="false"
-                    android:textSize="22dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TableLayout
@@ -513,7 +516,8 @@
                             android:gravity="center"
                             android:text="Карта"
                             android:textColor="@android:color/black"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="8sp"/>
 
                         <TextView
 
@@ -527,9 +531,10 @@
                             android:layout_weight="1"
                             android:background="@android:color/white"
                             android:gravity="center"
-                            android:text="Сертиф."
+                            android:text="Серт."
                             android:textColor="@android:color/black"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="9sp"/>
 
 
                         <RelativeLayout
@@ -567,7 +572,8 @@
                             android:gravity="center"
                             android:text="Свід."
                             android:textColor="@android:color/black"
-                            android:textStyle="bold">
+                            android:textStyle="bold"
+                            android:textSize="9sp">
 
                         </TextView>
 
@@ -637,7 +643,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/certDateTrailer"
@@ -654,7 +660,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/europackDateTrailer"
@@ -671,7 +677,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/svidYellowDateTrailer"
@@ -688,7 +694,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/strachDateTrailer"
@@ -705,7 +711,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp"/>
 
 
                     </TableRow>
@@ -752,7 +758,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/certPriceTrailer"
@@ -769,7 +775,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp"/>
 
                         <TextView
                             android:id="@+id/europackPriceTrailer"
@@ -786,7 +792,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/svidYellowPriceTrailer"
@@ -803,7 +809,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
                         <TextView
                             android:id="@+id/strachCardPriceTrailer"
@@ -820,7 +826,7 @@
 
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
-                            android:textSize="15sp" />
+                            android:textSize="9sp" />
 
 
                     </TableRow>

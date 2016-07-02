@@ -101,7 +101,7 @@
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
                 android:layout_marginTop="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:textColor="@android:color/black">
@@ -121,7 +121,7 @@
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
                 android:layout_marginTop="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:textColor="@android:color/black">
@@ -141,7 +141,7 @@
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
                 android:layout_marginTop="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
 
                 android:background="@android:color/white"
                 android:gravity="center"
@@ -162,7 +162,7 @@
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
                 android:layout_marginTop="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
 
                 android:background="@android:color/white"
                 android:gravity="center"
@@ -288,7 +288,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 >
@@ -307,7 +307,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 >
@@ -326,7 +326,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 >
@@ -345,7 +345,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="1px"
                 android:layout_marginRight="1px"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@android:color/white"
                 android:gravity="center"
                 >
