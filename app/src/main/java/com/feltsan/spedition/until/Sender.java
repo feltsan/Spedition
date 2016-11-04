@@ -34,21 +34,6 @@ import javax.mail.internet.MimeMessage;
  */
 public abstract class Sender {
 
-
-    public static void sendSMS1(Context context, String msg) {
-        try {
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage("+380673125112", null, msg, null, null);
-            Toast.makeText(context, "Message Sent",
-                    Toast.LENGTH_LONG).show();
-        } catch (Exception ex) {
-            Toast.makeText(context, ex.getMessage().toString(),
-                    Toast.LENGTH_LONG).show();
-            ex.printStackTrace();
-
-        }
-    }
-
     public static void sendEmail(String msg, final List<Documents> documentses, final List<Oil> oils) {
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
